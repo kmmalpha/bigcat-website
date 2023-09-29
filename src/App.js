@@ -1,7 +1,7 @@
 import './App.css';
-import Navbar from './components/navbar/Navbar.js';
+import Navbar from './components/navbar';
 
-function App() {
+const App = () => {
     return (
 		<>
 			< Navbar/>

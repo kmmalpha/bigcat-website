@@ -1,29 +1,32 @@
 import './style/Navbar.css';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-		<nav>
-			<div>
-				<img src="src/images/New Logo.png" />
-			</div>
-			<div>
-				<ul>
-					<li>
-						<a href="maaya">MAAYA</a>
-					</li>
-					<li>
-						<a href="music-in-green">MUSIC IN GREEN</a>
-					</li>
-					<li>
-						<a href="gallery">GALLERY</a>
-					</li>
-					<li>
-						<a href="store">STORE</a>
-					</li>
-					<li>
-						<a href="about">ABOUT</a>
-					</li>
-				</ul>
+		<nav className="navbar">
+			<div className="container">
+				<div className="logo">
+					<img src="src/images/New Logo.png" />
+				</div>
+				<div className="nav-elements">
+					<ul>
+						<li>
+							<NavLink to="maaya">MAAYA</NavLink>
+						</li>
+						<li>
+							<NavLink to="music-in-green">MUSIC IN GREEN</NavLink>
+						</li>
+						<li>
+							<NavLink to="gallery">GALLERY</NavLink>
+						</li>
+						<li>
+							<NavLink to="store">STORE</NavLink>
+						</li>
+						<li>
+							<NavLink to="about">ABOUT</NavLink>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	);
