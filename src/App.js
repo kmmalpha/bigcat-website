@@ -1,12 +1,12 @@
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-import Navbar from './components/navbar';
+import Navbar from './components/navbar/Navbar';
 
 const App = () => {
     return (
-		<>
-			< Navbar/>
-			<p>Big Cat Graphics</p>
-		</>
+		<BrowserRouter>
+			<Navbar />
+		</BrowserRouter>
 	);
 }
 
