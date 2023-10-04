@@ -16,3 +16,9 @@ body {
     align-items: center;
     height: 100%;
 }
+
+.navbar {
+    height: 60px;
+    background: #fef7e5;
+    position: relative;
+}
