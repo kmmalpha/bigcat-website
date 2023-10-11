@@ -13,9 +13,6 @@ const Navbar = () => {
     return (
 		<nav className="navbar">
 			<div className="container">
-				<div className="logo">
-					<img src="src/images/New Logo.png" />
-				</div>
 				<div className='menu-icon' onClick={toggleNavbar}>
 					<Hamburger />
 				</div>
@@ -23,14 +20,17 @@ const Navbar = () => {
 				{/* <div className="nav-elements"> */}
 					<ul>
 						<li>
+							<NavLink to="/"><img src="src/images/New Logo.png" alt="bcg-logo" className="logo" /></NavLink>
+						</li>
+						<li>
 							<NavLink to="/maaya">MAAYA</NavLink>
 						</li>
 						<li>
 							<NavLink to="/music-in-green">MUSIC IN GREEN</NavLink>
 						</li>
-						<li>
+						{/* <li>
 							<NavLink to="/"><img src="src/images/New Logo.png" alt="bcg-logo" className="logo" /></NavLink>
-						</li>
+						</li> */}
 						<li>
 							<NavLink to="/gallery">GALLERY</NavLink>
 						</li>
