@@ -13,11 +13,10 @@ const Navbar = () => {
     return (
 		<nav className="navbar">
 			<div className="container">
-				<div className='menu-icon' onClick={toggleNavbar}>
+				{/* <div className='menu-icon' onClick={toggleNavbar}>
 					<Hamburger />
-				</div>
+				</div> */}
 				<div className={`nav-elements ${showNavbar && 'active'}`}>
-				{/* <div className="nav-elements"> */}
 					<ul>
 						<li>
 							<NavLink to="/"><img src="src/images/New Logo.png" alt="bcg-logo" className="logo" /></NavLink>

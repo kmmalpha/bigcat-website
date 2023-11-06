@@ -26,7 +26,7 @@ body {
 .logo {
 }
 
-/* .nav-elements{
+.nav-elements{
     position: absolute;
     right: 0;
     top: 60px;
@@ -35,7 +35,7 @@ body {
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
     overflow: hidden;
-} */
+}
 
 .nav-elements ul {
     display: flex;
