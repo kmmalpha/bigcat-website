@@ -2,8 +2,8 @@ import React from "react";
 
 const Store = () => {
     return (
-        <div>
-            <p>This is the Store page</p>
+        <div style={{"background": "url(src/images/comingSoon.png)"}}>
+            
         </div>
     )
 }
