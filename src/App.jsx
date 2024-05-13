@@ -1,27 +1,32 @@
 import './App.css';
 import Navbar from './components/navbar/Navbar';
-import Maaya from './pages/Maaya';
+import Services from './pages/Services';
 import Home from './pages/Home';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 import MusicInGreen from './pages/MusicInGreen';
 import Gallery from './pages/Gallery';
+import BlogPosts from './pages/BlogPosts'
 import Store from './pages/Store'
+import Contact from './pages/Contact'
 import About from './pages/About';
+import Footer from './pages/Footer';
 
 const App = () => {
 	return (
-		<Router>
+		<><Router>
 			<Navbar />
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/maaya" element={<Maaya />} />
+				<Route path="/services" element={<Services />} />
 				<Route path="/music-in-green" element={<MusicInGreen />} />
 				<Route path="/gallery" element={<Gallery />} />
 				<Route path="/store" element={<Store />} />
+				<Route path="/contact" element={<Contact />} />
+				<Route path="/blog-posts" element={<BlogPosts />} />
 				<Route path="/about" element={<About />} />
 				<Route path="*" element={<Navigate to="/" />} />
 			</Routes>
-		</Router>
+		</Router><Footer /></>
 	);
 }
 
