@@ -1,0 +1,18 @@
+.not-external-link-button {
+    background-color: #000000; /* Blue */
+    color: #fff; /* White */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.not-external-link-button:hover {
+    background-color: #1eff01; /* Darker blue on hover */
+}
+
+.not-external-link-button:active {
+    background-color: #1eff01; /* Even darker blue when button is clicked */
+}

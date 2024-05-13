@@ -1,43 +1,38 @@
-import { React, useState } from 'react';
+import { React } from 'react';
 import '../styles/Navbar.css';
 import { NavLink } from 'react-router-dom';
-import Hamburger from 'hamburger-react'
+import logo from '../styles/images/logo-small.png';
+// import Hamburger from 'hamburger-react'
 
 const Navbar = () => {
-	const [showNavbar, setShowNavbar] = useState(false)
-
-	const toggleNavbar = () => {
-		setShowNavbar(!showNavbar)
-	}
-
     return (
 		<nav className="navbar">
 			<div className="container">
-				{/* <div className='menu-icon' onClick={toggleNavbar}>
-					<Hamburger />
-				</div> */}
-				<div className={`nav-elements ${showNavbar && 'active'}`}>
+				<div className="nav-elements" >
 					<ul>
 						<li>
-							<NavLink to="/"><img src="src/images/New Logo.png" alt="bcg-logo" className="logo" /></NavLink>
+							<NavLink to="/services">Services</NavLink>
 						</li>
 						<li>
-							<NavLink to="/maaya">MAAYA</NavLink>
+							<NavLink to="/music-in-green">Music In Green</NavLink>
 						</li>
 						<li>
-							<NavLink to="/music-in-green">MUSIC IN GREEN</NavLink>
-						</li>
-						{/* <li>
-							<NavLink to="/"><img src="src/images/New Logo.png" alt="bcg-logo" className="logo" /></NavLink>
-						</li> */}
-						<li>
-							<NavLink to="/gallery">GALLERY</NavLink>
+							<NavLink to="/blog-posts">Blog Posts</NavLink>
 						</li>
 						<li>
-							<NavLink to="/store">STORE</NavLink>
+							<NavLink to="/"><img src={logo} alt='logo' className="navbar-logo" /></NavLink>
 						</li>
 						<li>
-							<NavLink to="/about">ABOUT</NavLink>
+							<NavLink to="/gallery">Gallery</NavLink>
+						</li>
+						<li>
+							<NavLink to="/store">Store</NavLink>
+						</li>
+						<li>
+							<NavLink to="/contact">Contact</NavLink>
+						</li>
+						<li>
+							<NavLink to="/about">About</NavLink>
 						</li>
 					</ul>
 				</div>
