@@ -1,4 +1,8 @@
 .home-photos {
     display: flex;
-    marginRight: '10px'
+    margin-right: '10px'
+}
+
+.main-content {
+    padding-top: 60px; /* Add padding equal to the navbar height */
 }

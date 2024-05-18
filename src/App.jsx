@@ -9,7 +9,7 @@ import BlogPosts from './pages/BlogPosts'
 import Store from './pages/Store'
 import Contact from './pages/Contact'
 import About from './pages/About';
-import Footer from './pages/Footer';
+import Footer from './components/footer/Footer';
 
 const App = () => {
 	return (
