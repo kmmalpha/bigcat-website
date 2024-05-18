@@ -25,7 +25,7 @@ const Home = () => {
     ];
 
     return (
-        <div>
+        <div className="main-content">
             <section>
                 <h2>BIG CAT GRAPHICS</h2>
                 <p>You can now watch our show called Music In Green on YouTube. Click the link below to go and check it out!</p>
